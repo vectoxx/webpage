@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Profil</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', sans-serif; 
+            text-align: center; 
+            padding: 20px; 
+            background: #f4f4f4; 
+            color: #333;
+        }
+        .card { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 15px; 
+            display: inline-block; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Korrigiert */
+            max-width: 550px;
+            width: 100%;
+        }
+        img { 
+            border-radius: 50%; 
+            width: 150px; 
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #3498db;
+            margin-bottom: 15px;
+        }
+        h1 { margin-bottom: 5px; color: #2c3e50; }
+        .intro { color: #7f8c8d; margin-bottom: 25px; line-height: 1.5; }
+        
+        /* Roadmap Styling */
+        .roadmap-container {
+            text-align: left; /* Text in der Roadmap linksbündig */
+            margin: 20px 0;
+            padding: 15px;
+            background: #fafafa;
+            border-radius: 10px;
+            border: 1px solid #eee;
+        }
+        .roadmap-title {
+            font-size: 1.2em;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+        .roadmap-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        .status-box { margin-right: 12px; margin-top: 4px; }
+        input[type="checkbox"] { transform: scale(1.2); }
+        .content p { margin: 2px 0 0 0; font-size: 0.85em; color: #7f8c8d; }
+        .highlight { color: #3498db; font-weight: bold; }
+
+        .btn-contact {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn-contact:hover { background: #2980b9; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="foto.png" alt="Avatar">
+        <h1>Hallo</h1>
+        <p class="intro">
+            Willkommen auf meinem Profil.<br>
+            Ich interessiere mich für <strong>Cloud Hosting, Virtualisierung, Linux</strong> und vieles mehr.
+        </p>
+
+        <section class="roadmap-container">
+            <h2 class="roadmap-title">🎯 Roadmap 2026</h2>
+            
+            <div class="roadmap-item">
+                <div class="status-box">
+                    <input type="checkbox" id="lpic" disabled>
+                </div>
+                <div class="content">
+                    <label for="lpic"><strong>LPIC-1: Linux Professional</strong></label>
+                    <p>Fokus: <span class="highlight">Shell-Scripting & Admin</span></p>
+                </div>
+            </div>
+
+            <div class="roadmap-item">
+                <div class="status-box">
+                    <input type="checkbox" id="az104" disabled>
+                </div>
+                <div class="content">
+                    <label for="az104"><strong>AZ-104: Azure Administrator</strong></label>
+                    <p>Fokus: <span class="highlight">Networking & Storage</span></p>
+                </div>
+            </div>
+        </section>
+
+        <a href="mailto:deine-email@beispiel.ch" class="btn-contact">Kontaktier mich</a>
+    </div>
+
+</body>
+</html>
